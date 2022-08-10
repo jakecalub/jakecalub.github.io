@@ -1,0 +1,264 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 16%;
+}
+
+body{
+    background-color: #0B0C10;
+    font-family: Optima;
+    text-align: center;
+    margin: 0 auto;
+    color: whitesmoke;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: auto;
+    overflow: auto; 
+    background-color: #0B0C10;
+    padding-left: 3%;
+}
+
+.nav-item{
+    text-align: center;
+    float: left; 
+    text-transform: uppercase;
+    padding-top: 2%;
+    height: 40pt;
+    width: 13%;
+    display: block;
+    font-size: medium;
+    border-bottom: solid 7px #0B0C10;
+}
+
+a{
+    color: #45A29E;
+    text-decoration: none;
+}
+
+.logo{
+    padding-top: 2%;
+    background-image: url("../img/logo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 13%;
+    height: 40pt;
+    float: left;
+    display: block;
+}
+
+.logo:hover{
+    transition: 300ms;
+    transition-timing-function: ease-in-out;
+    background-image: url("../img/logo_hover.png");
+    /* border-bottom: solid 7px #0B0C10; */
+}
+
+.nav-item:hover{
+    transition: 300ms;
+    transition-timing-function: ease-in-out;
+    /* color: #0B0C10;
+    background-color: #66FCF1; */
+    color: #66FCF1;
+    border-bottom: solid 7px #66FCF1;
+    width: 13%;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+
+p{
+    text-align: justify;
+}
+
+.container{
+    width: 80%;
+    margin: 8% auto;
+}
+
+.left-column{
+    float: left;
+    width: 47%;
+    height: 300px;
+    padding: 5px;
+}
+
+.right-column{
+    float: right;
+    width: 47%;
+    height: 300px;
+    padding: 5px;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+textarea{
+    vertical-align: top;
+}
+
+.profile{
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    /* padding-top: 1em; */
+    box-shadow: 0 0 0 10px #45A29E;
+}
+
+#contact_form{
+    padding: 2em;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background-color: #0B0C10;
+    width: 100%;
+}
+
+table, tr, td, th{
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: solid 1pt #45A29E;
+    padding: 5pt;
+}
+
+li{
+    text-align: left;
+}
+
+.hobby{
+    width: 100%;
+    height: 350px;
+    /* background-color: #C5C6C7;
+    border: solid 1px saddlebrown; */
+}
+
+.hobby-left{
+    width: 300px;
+    height: 300px;
+    float: left;
+    padding: 20px;
+}
+
+.hobby-right{
+    width: 300px;
+    height: 300px;
+    float: right;
+    padding: 20px;
+}
+
+.hobby-text{
+    padding: 20px;
+}
+
+.credit{
+    text-align: center;
+    font-size: smaller;
+}
+
+.gallery{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, calc(33.33% - 20px));
+}
+
+.gallery-img{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.gallery-img:hover{
+    transition: ease-in-out;
+    transition-duration: 100ms;
+    cursor: pointer;
+    box-shadow: 0 0 15px 4px rgba(102, 252, 241, .4);
+}
+/* Taken from W3Schools.com from here */
+/*sets background to black*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/*actual photo*/
+.modal-content {
+    margin: auto;
+    display: block;
+    height: 70%;
+    width: auto;
+    /* width: 100%;
+    max-width: 700px; */
+}
+
+/* Photo caption */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  /* animation setting */
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+
+  /* The Close Button */
+.close {
+    position: absolute;
+    top: 6rem;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* until here */
+
+  .box{
+    padding: 20px;
+    background-color: #45A29E;
+    box-shadow: 10px 10px #C5C6C7;
+  }
