@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="script/script.js"></script>
+        <title>Photo Gallery</title>
+        <!-- Tab Icon -->
+        <link rel="icon" type="image/x-icon" href="img/logo.png">
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul>
+                <a href="index.html"><span class="logo"></span></a>
+                <!-- <a href="about.html"><li class="nav-item">About</li></a> -->
+                <!-- <a href="education.html"><li class="nav-item">Education</li></a> -->
+                <a href="hobbies.html"><li class="nav-item">Hobbies</li></a>
+                <!-- <a href="experience.html"><li class="nav-item">Experience</li></a> -->
+                <a href="gallery.html"><li class="nav-item">Gallery</li></a>
+                <a href="contact.html"><li class="nav-item">Contact</li></a>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>Random images from over the years</h1> 
+            <h4>Click each photo to view in full</h4>
+            <div class="grid">
+                <a class="gallery-link" href="baking.html">
+                    <img id="baking" class="col-3" src="img/hobbies/baking.png" onmouseenter="onFocusAnimation('1')" onmouseleave="unfocusAnimation('1')">BAKING
+                </a>
+                <a href="lettering.html">
+                    <img id="lettering" src="img/hobbies/calligraphy.png" class="col-3" onmouseenter="onFocusAnimation('2')" onmouseleave="unfocusAnimation('2')">HAND LETTERING
+                </a>
+                <a href="photography.html">
+                    <img id="camera" src="img/hobbies/camera.png" class="col-3" onmouseenter="onFocusAnimation('3')" onmouseleave="unfocusAnimation('3')">PHOTOGRAPHY
+                </a>
+            </div>
+            <!-- <div class="gallery">
+                <img id="img-1" class="gallery-img" onclick="displayModal('img-1')" src="img/gallery/cliff.jpg" alt="I took this photo when me and my friends went to a nearby cliff in Clovelly Beach. The waters were a very nice shade of blue and it was very calming. Sitting on the edge of the rocks was nerve wracking but also quite exciting.">
+                <img id="img-2" class="gallery-img" onclick="displayModal('img-2')" src="img/gallery/waterfall.jpg" alt="My friends and I decided on a very spontaneous trip to the Blue Mountains. We found a very short cliff walk and at the end you can see Wentworth Falls. The view was very breathtaking and we got there just as the sun was about to set, which made it even more beatiful, very cold though 😂" >
+                <img id="img-3" class="gallery-img" onclick="displayModal('img-3')" src="img/gallery/landscape.jpg" alt="My housemates and I randomly decided to go to the Royal National Park one day. If my memory serves me right, this photo was taken on our way to the famous Wedding Cake Rock. I love views like this where there is a combination of the ocean and rock formations.">
+                <img id="img-4" class="gallery-img" onclick="displayModal('img-4')" src="img/gallery/gelato.jpg" alt="On the way to a dinner with friends, my friends and I passed by a food truck that sold gelato with quite unusual flavors. Being intrigued by them, we bought some, although I did still pick the safe flavors: pistachio, and chocolate.">
+                <img id="img-5" class="gallery-img" onclick="displayModal('img-5')" src="img/gallery/waffles.jpg" alt="I like going out for brunch once in a while and this Oreo waffle is an unusual choice for me as I usually order savoury brunch items. It was still very good paired with a long black coffee.">
+                <img id="img-6" class="gallery-img" onclick="displayModal('img-6')" src="img/gallery/brunch.jpg" alt="This is a common brunch order of mine whenever we go to cafes. In many places, this is called like a Big Breakfast. Restaurants can vary the contents of the dish, but it always consists of eggs, bread, bacon, and hashbrowns. Some places add halloumi cheese, sausage, mushrooms, grilled tomatoes, and even mashed avocado.">
+                <img id="img-7" class="gallery-img" onclick="displayModal('img-7')" src="img/gallery/cupcake.jpg" alt="I have been wanting to bake cupcakes and experiment on different frostings. Unfortunately there aren't many people around to eat them after. The cupcake base is chocolate cake, the frosting is made with espresso and white chocolate, topped with a chocolate covered espresso bean.">
+                <img id="img-8" class="gallery-img" onclick="displayModal('img-8')" src="img/gallery/macaron.jpg" alt="As I mentioned in my hobbies, I do like baking. I try to bake something at least once a month. These macarons were the best of the bunch and are filled with a very dark chocolate ganache. I think it's a good contrast between the sweet macaron shell and the creamy and slightly bitter chocolate.">
+                <img id="img-9" class="gallery-img" onclick="displayModal('img-9')" src="img/gallery/cookies.jpg" alt="I went to a Christmas party and brought three different cookie flavors. The ones on the left are caramelized white chocolate and cranberry cookies, the middle ones are chocolate cookies with Christmas colored M&Ms to match the theme, and the ones on the right are chocolate chunk cookies(I used a mixed of milk and dark just so it's not that boring). ">
+                <img id="img-10" class="gallery-img" onclick="displayModal('img-10')" src="img/gallery/dog.jpg" alt="I once a a close coworker who moved to Brisbane. When I met up with them the last time they visited, their dog came with us. I do love dogs in general and this one is very sweet and fun. His name is Barry and unfortunately, he passed away some time ago.">
+                <img id="img-11" class="gallery-img" onclick="displayModal('img-11')" src="img/gallery/drinks.jpg" alt="I don't like going to noisy clubs or pubs but I agreed to go with my friends this one time. I saw this neon sign and thought that it looked nice.">
+                <img id="img-12" class="gallery-img" onclick="displayModal('img-12')" src="img/gallery/umbrella.jpg" alt="I like going to the beach when the weather is nice, the sun is up but doesn't burn as much and the wind is quite cold. We rented an umbrella from a random place in Manly Beach because we don't any of our own.">          
+            </div> -->
+        </div>
+        <footer>
+            <h5>ALL RIGHTS RESERVED JAKE CALUB 2022</h5>
+        </footer>
+    </body>
+</html>

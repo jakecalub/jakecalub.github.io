@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="script/script.js"></script>
+        <title>Baking Gallery</title>
+        <!-- Tab Icon -->
+        <link rel="icon" type="image/x-icon" href="img/logo.png">
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul>
+                <a href="index.html"><span class="logo"></span></a>
+                <!-- <a href="about.html"><li class="nav-item">About</li></a> -->
+                <!-- <a href="education.html"><li class="nav-item">Education</li></a> -->
+                <a href="hobbies.html"><li class="nav-item">Hobbies</li></a>
+                <!-- <a href="experience.html"><li class="nav-item">Experience</li></a> -->
+                <a href="gallery.html"><li class="nav-item">Gallery</li></a>
+                <a href="contact.html"><li class="nav-item">Contact</li></a>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>BAKING</h1>
+            <p>I started baking about a year ago or so. Back in my hometown my sisters and I would bake sweets occasionally. Most of my sisters are sweet tooths and this is something that we have in common. I personally mostly bake three things and I've tried quite a few recipes and found one that I preferred the best.</p>
+
+            <h2>COOKIES</h2>
+            <p>
+                Cookies are one of the most basic things you can bake, but because it is simple you can have a lot of room to experiment and try ou many different flavour combinations. Over the course of year I have tried almost 7 different cookie recipes and when I found the best one, I made a few changes of my own that aren't in the recipe to make it more my own.
+            </p>
+            <div class="gallery">
+                <img id="img-1" class="gallery-img" onclick="displayModal('img-1')" src="img/gallery/baking-1.jpg" alt="The cookie base of this one is espresso and I've put in three different types of chocolate: white chocolate chips, milk chocolate, and 70% dark chocolate. I think the combination of bitter and sweet is nice.">
+                <video id="img-2" class="gallery-img" onclick="displayModal('img-2')" src="img/gallery/baking-2.MOV" title="This is a classic chocolate chip cookie with milk and dark chocolate chips. But to make it a little less boring, I used browned butter (which smells so good 😍) and added a spice blend that isn't too intense but also makes the cookie base better." ></video>
+                <img id="img-3" class="gallery-img" onclick="displayModal('img-3')" src="img/gallery/baking-3.jpg" alt="This uses a soft and chewy cookie base from a chocolate chip cookie recipe I tried online. I added nutmeg and cinnamon to the recipe and rolled the dough balls in cinnamon sugar before baking. This results in a slightly crunchy outside and a perfectly chewy inside. The cinnamon sugar coating doesn't make it too sweet. This also good for people who aren't into chocolate that much.">
+            </div>
+            <h2>CUPCAKES</h2>
+            <p>I've been wanting to try baking cakes and cupcakes for a long time, but have been wary of investing in trays and such because of limited storage spaces. When I moved in with my friends, I was excited to learn that they have cupcake trays and loaf tins.</p>
+            <p>With baking, there are many trials and errors to be made. But when the recipe that I have tried for the first time came out really good, I was a little surprised. My favorite sweet thing ever is chocolate anything, so it is natural for me to bake chocolate cupcakes.</p>
+            <div class="gallery">
+                <img id="img-4" class="gallery-img" onclick="displayModal('img-4')" src="img/gallery/baking-4.jpg" alt="This is a chocolate cake base with a whipped white chocolate espresso ganache frosting. The frosting on this one is quite tricky and very finnicky because I was too impatient and it would split on me. The tiny topping on top is a chocolate covered espresso been, to keep with the coffee theme. I was trying to copy this really good ice cream flavor that I have tried from the Conoisseur brand, Cafe Grande.">
+                <img id="img-5" class="gallery-img" onclick="displayModal('img-5')" src="img/gallery/baking-5.jpg" alt="This is the very first cupcake I baked and it turned out really good, if I do say so myself. They turned out a little flat because of the dodgy oven temperature but overall it came out well. I used a fluffy cream cheese frosting to complement the chocolate and so that it isn't overly rich because the cake itself is dense and moist. Of course my piping skills need a lot of work but for my first time, I didn't do half bad.">
+                <img id="img-6" class="gallery-img" onclick="displayModal('img-6')" src="img/gallery/baking-6.jpg" alt="This cupcake is the same chocolate cake (surprise surprise) but topped with an Oreo cookies and cream frosting. To make it less sweet, I also added cream cheese, so that it's not overbearing. Because the frosting was not very smooth, piping wasn't an option. Instead, I coated the sides with some more crushed Oreos and topped each with a mini Oreo.">
+            </div>
+            <h2>BROWNIES</h2>
+            <p>
+                Brownies for me are the most indulgent treat you could have. I started baking brownies back in the Philippines and then forgot about them when I moved to Sydney. After getting back into baking I remembered about the recipe me and my sisters use for brownies. Back then we only made the plain brownies because everything was quite expensive. We would sometimes add a chocolate ganache topping if it were a special occasion or something.
+            </p>
+            <p>
+                When I moved here, I tried to make it a little bit more interesting because ingredients are a little bit more affordable. By adding different toppings and folding bits of things inside the batter can give the brownie a little bit of texture and a hint of a different flavor as well.
+            </p>
+            <div class="gallery">
+                <img id="img-7" class="gallery-img" onclick="displayModal('img-7')" src="img/gallery/baking-7.jpg" alt="Unfortunately, I didn't take any photos of this brownie batch after it has baked. In this one I swirled some of the Lotus Biscoff spread on top and folded some chunks of Biscoff biscuits inside to give it more texture and additional flavour.">
+                <img id="img-8" class="gallery-img" onclick="displayModal('img-8')" src="img/gallery/baking-8.jpg" alt="S'mores are very common American thing and I wanted to try and copy that with this one. S'mores are made with graham crackers, melted chocolate, and gooey toasted marshmallows. In my version: the chocolate would be the brownie base, because graham crackers aren't readily available in the shops I used shortbread biscuits, and the marshmallows are, well, marshmallows.">
+                <img id="img-9" class="gallery-img" onclick="displayModal('img-9')" src="img/gallery/baking-9.jpg" alt="Cheesecakes pair nicely with chocolate and that's what I tried to do here. I swirled a basic cheesecake batter on top and folded in dark chocolate chips and cookies for a little bit more flavor. I also used an extra dark chocolate for this batch just to see how it would taste compared to the normal dark chocolate I used.">
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="imgBlock">
+                <div id="caption"></div>
+            </div>
+        </div>
+        <footer>
+            <h5>ALL RIGHTS RESERVED JAKE CALUB 2022</h5>
+        </footer>    
+    </body>
+</html>
