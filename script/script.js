@@ -22,14 +22,18 @@ function displayModal(imgId){
 
     var img = document.getElementById(imgId);
     var modalImg = document.getElementById("imgBlock");
+    var modalVid = document.getElementById("vidBlock");
     var captionText = document.getElementById("caption");
     img.onclick = function(){
         modal.style.display = "block";
-        modalImg.src = this.src;
-        if(this.alt == undefined){
+        if(imgId == "img-2"){
+            modalVid.src = this.src; 
             captionText.innerHTML = this.title;
+            document.getElementById("imgBlock").style.display = "none";
         }else{
+            modalImg.src = this.src;
             captionText.innerHTML = this.alt;
+            document.getElementById("vidBlock").style.display = "none";
         }   
     }
 
